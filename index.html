@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waren Coder Pro - Redirecting...</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      text-align: center;
+      padding: 50px 20px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 600px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #3490dc;
+      margin-bottom: 16px;
+    }
+    p {
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+    .loader {
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3490dc;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .button {
+      display: inline-block;
+      background-color: #3490dc;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+    .button:hover {
+      background-color: #2779bd;
+    }
+  </style>
+  <script>
+    // Redirect to the actual app after a short delay
+    setTimeout(function() {
+      window.location.href = "./index.html";
+    }, 2000);
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="loader"></div>
+    <h1>Waren Coder Pro</h1>
+    <p>Your application is loading. You'll be redirected in a moment...</p>
+    <p>If you're not redirected automatically, please click the button below.</p>
+    <a href="./index.html" class="button">Go to Application</a>
+  </div>
+</body>
+</html>
